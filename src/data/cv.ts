@@ -22,7 +22,7 @@ export const experiences = [
 	},
 	{
 		company: 'Freelance',
-		time: '2013 - 2025',
+		time: '2018 - 2020',
 		title: 'Développeur web indépendant',
 		location: 'Perpignan, France',
 		description: 'Intégration et développement de sites vitrine, e-commerce, applications web en HTML5, JavaScript, PHP Orienté Objet. Technologies : Laravel, PHPUnit.',
@@ -33,6 +33,13 @@ export const experiences = [
 		title: 'Gérant et développeur web',
 		location: 'Perpignan, France',
 		description: 'Agence de communication web & print. Création de sites internet, e-commerce, développement web. Technologies : Laravel, Symfony.',
+	},
+	{
+		company: 'Freelance',
+		time: '2013 - 2014',
+		title: 'Développeur web indépendant',
+		location: 'Perpignan, France',
+		description: 'Démarche client, développement d\'outils de gestion et de sites internet.',
 	},
 	{
 		company: 'Montserrat Communication',
@@ -105,29 +112,3 @@ export const languages = [
 	},
 ];
 
-export const publications = [
-	{
-		title: 'Latinexperience',
-		authors: 'Stéphane Molano',
-		journal: 'Site Internet',
-		time: '2018',
-		link: 'http://creasteph.net/latinexperience/',
-		abstract: 'Agence de voyage spécialisée en Amérique Latine. Site vitrine avec système de recherche de destinations.',
-	},
-	{
-		title: 'La Cafetière Catalane',
-		authors: 'Stéphane Molano',
-		journal: 'E-commerce',
-		time: '2017',
-		link: 'http://creasteph.net/la-cafetiere-catalane/',
-		abstract: 'Boutique en ligne de vente de café et accessoires.',
-	},
-	{
-		title: 'Outil de détermination Espa.fr',
-		authors: 'Stéphane Molano',
-		journal: 'Application Web',
-		time: '2016',
-		link: 'http://creasteph.net/outil-de-determination-espa-fr/',
-		abstract: 'Application web de détermination de produits pour la société ESPA.',
-	},
-];

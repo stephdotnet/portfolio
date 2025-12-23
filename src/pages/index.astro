@@ -2,11 +2,9 @@
 import Layout from '../layouts/Layout.astro'
 
 import { profile } from '@/settings'
-import { publications } from '@/data/cv'
-import ProfilePictures from '@/assets/index.png'
+import HomeIllustration from '@/assets/index.png'
 import Hero from '@/components/ui/Hero.astro'
 import Grid from '@/components/ui/Grid.astro'
-import ArticleList from '@/components/ui/ArticleList.astro'
 
 const { fullName, title, institute, research_areas } = profile
 ---
@@ -18,17 +16,12 @@ const { fullName, title, institute, research_areas } = profile
 			fullName={fullName}
 			title={title}
 			institute={institute}
-			profilePicture={ProfilePictures}
+			Illustration={HomeIllustration}
 		/>
 	</section>
 
 	<!-- Domaines d'expertise -->
-	<section class='py-12 border-b'>
+	<section class='py-12'>
 		<Grid gridTitle="Domaines d'expertise" gridItems={research_areas} />
-	</section>
-
-	<!-- Réalisations récentes -->
-	<section class='py-12 border-t'>
-		<ArticleList listTitle='Réalisations récentes' listItems={publications} />
 	</section>
 </Layout>

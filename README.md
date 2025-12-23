@@ -40,7 +40,6 @@ src/
 ├── pages/            # Pages du site
 │   ├── index.astro
 │   ├── cv.astro
-│   ├── realisations.astro
 │   ├── mentions-legales.astro
 │   └── blog/
 └── settings.ts       # Configuration du site (profil, réseaux sociaux, SEO)

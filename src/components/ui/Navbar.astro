@@ -32,19 +32,16 @@ const {fullName, title} = profile
 			<div class='mx-4 mt-4'>
 				<ul class='space-y-4 menu grow shrink menu-md overflow-y-auto'>
 					<li>
-                        <a href={`${template.base}/`} class='text-lg'>Accueil</a>
+						<a href={`${template.base}/`} class='text-lg'>Accueil</a>
 					</li>
 					<li>
-                        <a href={`${template.base}/realisations`} class='text-lg'>Réalisations</a>
+						<a href={`${template.base}/cv`} class='text-lg'>CV</a>
 					</li>
+					{isBlogPopulated &&
 					<li>
-                        <a href={`${template.base}/cv`} class='text-lg'>CV</a>
-                    </li>
-                    {isBlogPopulated &&
-					<li>
-                        <a href={`${template.base}/blog/1`} class='text-lg'>Blog</a>
-</li>
-                    }
+						<a href={`${template.base}/blog/1`} class='text-lg'>Blog</a>
+					</li>
+					}
 				</ul>
 			</div>
 		</div>
