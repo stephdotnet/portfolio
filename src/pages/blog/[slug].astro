@@ -17,7 +17,7 @@ export async function getStaticPaths(): Promise<Array<{ params: { slug: string }
     return posts
 }
 const {post} = Astro.props;
-const { title, date, tags} = post.data; 
+const { title, date, tags} = post.data;
 const { Content } = await render(post);
 ---
 
@@ -47,7 +47,7 @@ const { Content } = await render(post);
 							></path>
 						</svg>
 						{
-							new Date(date).toLocaleDateString('en-US', {
+							new Date(date).toLocaleDateString('fr-FR', {
 								year: 'numeric',
 								month: 'long',
 								day: 'numeric',
@@ -60,7 +60,7 @@ const { Content } = await render(post);
 						tags && (
 							<div class='flex flex-wrap gap-2'>
 								{tags.map(tag => (
-									<span class='badge badge-accent badge-outline'>{tag}</span>
+									<span class='badge badge-outline border-primary text-primary'>{tag}</span>
 								))}
 							</div>
 						)
@@ -75,15 +75,22 @@ const { Content } = await render(post);
          prose-p:mb-4 prose-p:leading-relaxed
          prose-strong:text-base-content prose-strong:font-bold
          prose-em:italic
-         prose-a:text-accent prose-a:no-underline hover:prose-a:underline
-         prose-code:text-accent prose-code:bg-base-200 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
-         prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:pl-4 prose-blockquote:italic
+         prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+         prose-code:text-primary prose-code:bg-base-200 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+         prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-4 prose-blockquote:italic
          prose-ul:list-disc prose-ul:pl-6
          prose-ol:list-decimal prose-ol:pl-6
          prose-li:mb-2
          prose-img:rounded-lg prose-img:my-8'
         >
                 <Content />
+			</div>
+
+			<!-- Back to blog -->
+			<div class='mt-12 pt-8 border-t'>
+				<a href={`${template.base}/blog/1`} class='btn btn-primary'>
+					← Retour aux articles
+				</a>
 			</div>
 		</article>
 	</div>

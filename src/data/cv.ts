@@ -1,63 +1,133 @@
 export const experiences = [
 	{
-		company: '',
-		time: '',
-		title: '',
-		location: '',
-		description: '',
+		company: 'Actual group',
+		time: 'Actuellement',
+		title: 'Engineering Manager',
+		location: 'À distance',
+		description: 'Management d\'équipes de développement, veille technologique, définition des standards et bonnes pratiques.',
 	},
-	// {
-	// 	company: 'Radium Institute (Institut du Radium)',
-	// 	time: '1914 - 1934',
-	// 	title: 'Director',
-	// 	location: 'Paris, France',
-	// 	description: 'Led groundbreaking studies on radioactivity and mentored future Nobel Prize laureates.',
-	// },
+	{
+		company: 'Actual group',
+		time: '2021 - 2023',
+		title: 'Lead Developer',
+		location: 'À distance',
+		description: 'Pilotage technique des projets, architecture logicielle, code review. Technologies : React Native, Laravel.',
+	},
+	{
+		company: 'Actual group',
+		time: '2020 - 2021',
+		title: 'Fullstack Web Developer',
+		location: 'À distance',
+		description: 'Développement d\'applications web fullstack. Technologies : Laravel, PHPUnit, tests automatisés.',
+	},
+	{
+		company: 'Freelance',
+		time: '2013 - 2025',
+		title: 'Développeur web indépendant',
+		location: 'Perpignan, France',
+		description: 'Intégration et développement de sites vitrine, e-commerce, applications web en HTML5, JavaScript, PHP Orienté Objet. Technologies : Laravel, PHPUnit.',
+	},
+	{
+		company: 'Dialogue de Sourds',
+		time: '2014 - 2018',
+		title: 'Gérant et développeur web',
+		location: 'Perpignan, France',
+		description: 'Agence de communication web & print. Création de sites internet, e-commerce, développement web. Technologies : Laravel, Symfony.',
+	},
+	{
+		company: 'Montserrat Communication',
+		time: '2011 - 2013',
+		title: 'Développeur web',
+		location: 'Perpignan, France',
+		description: 'Développement web, e-commerce, intégration et ergonomie, animations JavaScript, recherche et développement (outils SEO et collaboratifs).',
+	},
+	{
+		company: 'CreaSteph',
+		time: '2009 - 2011',
+		title: 'Développeur web',
+		location: 'Perpignan, France',
+		description: 'Conception d\'applications web (systèmes de gestion), intégration et développement de sites web.',
+	},
 ];
 
 export const education = [
 	{
-		school: '',
-		time: '',
-		degree: '',
-		location: '',
-		description: '',
+		school: 'IDEM Le Soler',
+		time: '2009',
+		degree: 'Communication graphique et multimédia, Module Web',
+		location: 'Le Soler, France',
+		description: 'Formation spécialisée en création web et multimédia.',
 	},
-	// {
-	// 	school: 'University of Paris',
-	// 	time: '1891 - 1895',
-	// 	degree: 'Master’s in Physics and Mathematics',
-	// 	location: 'Paris, France',
-	// 	description: 'Graduated at the top of her class in physics and second in mathematics.',
-	// },
+	{
+		school: 'IUT Informatique Toulouse Rangueil',
+		time: '2007 - 2009',
+		degree: 'DUT Informatique',
+		location: 'Toulouse, France',
+		description: 'Formation en informatique générale, algorithmique et programmation.',
+	},
 ];
 
 export const skills = [
 	{
-		title: '',
-		description: '',
+		title: 'Management',
+		description: 'Gestion d\'équipes, code review, définition des standards, veille technologique',
 	},
-	// {
-	// 	title: 'Experimental Techniques',
-	// 	description: 'Spectroscopy, Isolation of Radioactive Elements, Radiation Measurement',
-	// },
+	{
+		title: 'Backend',
+		description: 'PHP 8, Laravel, Symfony, API REST, PHPUnit, architecture logicielle',
+	},
+	{
+		title: 'Frontend',
+		description: 'React, React Native, TypeScript, JavaScript, HTML5/CSS3, Tailwind CSS',
+	},
+	{
+		title: 'DevOps & Outils',
+		description: 'Git, GitHub Actions, Docker, CI/CD, tests automatisés',
+	},
+	{
+		title: 'Base de données',
+		description: 'MySQL, PostgreSQL, Redis, conception et optimisation de schémas',
+	},
+];
+
+export const languages = [
+	{
+		name: 'Français',
+		level: 'Langue maternelle',
+	},
+	{
+		name: 'Anglais',
+		level: 'Bilingue',
+	},
+	{
+		name: 'Espagnol',
+		level: 'Bilingue',
+	},
 ];
 
 export const publications = [
 	{
-		title: '',
-		authors: '',
-		journal: '',
-		time: '',
-		link: '',
-		abstract: '',
+		title: 'Latinexperience',
+		authors: 'Stéphane Molano',
+		journal: 'Site Internet',
+		time: '2018',
+		link: 'http://creasteph.net/latinexperience/',
+		abstract: 'Agence de voyage spécialisée en Amérique Latine. Site vitrine avec système de recherche de destinations.',
 	},
-	// {
-	// 	title: 'The Radiation of Uranium Compounds',
-	// 	authors: 'Marie Curie',
-	// 	journal: 'Comptes Rendus de l’Académie des Sciences',
-	// 	time: '1898',
-	// 	link: '#',
-	// 	abstract: 'Early research leading to the identification of uranium’s radioactive properties.',
-	// },
+	{
+		title: 'La Cafetière Catalane',
+		authors: 'Stéphane Molano',
+		journal: 'E-commerce',
+		time: '2017',
+		link: 'http://creasteph.net/la-cafetiere-catalane/',
+		abstract: 'Boutique en ligne de vente de café et accessoires.',
+	},
+	{
+		title: 'Outil de détermination Espa.fr',
+		authors: 'Stéphane Molano',
+		journal: 'Application Web',
+		time: '2016',
+		link: 'http://creasteph.net/outil-de-determination-espa-fr/',
+		abstract: 'Application web de détermination de produits pour la société ESPA.',
+	},
 ];

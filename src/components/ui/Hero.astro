@@ -8,12 +8,13 @@ const {fullName, title, institute, profilePicture} = Astro.props
 ---
 <div class='flex-1'>
   <h1 class='text-4xl font-bold mb-4'>
-    Welcome! I'm <span class='text-secondary'>{fullName}</span>
+    Bienvenue! Je suis <span class='text-primary'>{fullName}</span>
   </h1>
-  <p class='text-xl text-gray-600 mb-4'>{title}{institute ? ` at ${institute}` : ''}</p>
+  <p class='text-xl text-base-content/60 mb-4'>{institute}</p>
   <p class='text-lg mb-6'>
-    Brief impactful description of your research focus and academic mission.
-    Highlight your key contributions and areas of expertise.
+    Développeur web senior sur Perpignan depuis plus de 12 ans, j'ai toujours été passionné par l'informatique et le web.
+    Grâce à ma formation d'analyste programmeur, je maîtrise les aspects les plus complexes du développement web.
+    Mes compétences : PHP Orienté Objet, SQL, intégration HTML5/CSS3, responsive design, animations et ergonomie en JavaScript.
   </p>
   <div class='flex gap-4'>
     <SocialIcons />

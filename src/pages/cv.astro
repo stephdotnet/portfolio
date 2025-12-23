@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import { experiences, education, skills, publications } from '../data/cv'
+import { experiences, education, skills, publications, languages } from '../data/cv'
 import CvTimeline from '@/components/ui/CvTimeline.astro'
 
 import type { Experience, Education, Publication } from '../types/cv'
@@ -12,13 +12,14 @@ let orderedEducations: Education[] = []
 let orderedPublications: Publication[] = []
 
 const orderElement = <T extends { time: string }>(a: T, b: T) => {
-  const presentValues = ['present', 'now', 'current', 'today']
+  const presentValues = ['present', 'now', 'current', 'today', 'actuellement']
   if (
 			presentValues.includes(
 				(a['time'] as string)?.split(' - ')[1]?.toLowerCase()
-			)
+			) ||
+			presentValues.includes((a['time'] as string)?.toLowerCase())
 		) {
-			// If the date is 'present', it should be the first element
+			// If the date is 'present' or 'actuellement', it should be the first element
 			return -1
 		}
 		const dateA = new Date((a['time'] as string)?.split(' - ')[1])
@@ -45,12 +46,12 @@ if (publications.length > 0) {
 }
 ---
 
-<Layout>
+<Layout title="CV | CreaSteph">
 	{
 		orderedEducations.length > 0 && (
 			<section class='mb-12'>
 				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
-					Education
+					Formation
 				</h2>
 				<CvTimeline elements={orderedEducations} colored={true} />
 			</section>
@@ -61,7 +62,7 @@ if (publications.length > 0) {
 		orderedExperiences.length > 0 && (
 			<section class='mb-12'>
 				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
-					Experiences
+					Expérience professionnelle
 				</h2>
 				<CvTimeline elements={orderedExperiences} colored={true} />
 			</section>
@@ -72,7 +73,7 @@ if (publications.length > 0) {
 		orderedPublications.length > 0 && (
 			<section class='mb-12'>
 				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
-					Last publications
+					Dernières réalisations
 				</h2>
 				<PublicationsList elements={orderedPublications}/>
 			</section>
@@ -82,7 +83,23 @@ if (publications.length > 0) {
 	{
 		skills.length > 0 && (
 			<section class='mb-12'>
-				<List listTitle='Skills' listItems={skills}/>
+				<List listTitle='Compétences' listItems={skills}/>
+			</section>
+		)
+	}
+
+	{
+		languages.length > 0 && (
+			<section class='mb-12'>
+				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>Langues</h2>
+				<div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
+					{languages.map((lang) => (
+						<div class='card bg-base-200 p-4'>
+							<h3 class='font-semibold text-lg'>{lang.name}</h3>
+							<p class='text-base-content/70'>{lang.level}</p>
+						</div>
+					))}
+				</div>
 			</section>
 		)
 	}

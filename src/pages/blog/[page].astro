@@ -27,7 +27,7 @@ const { page } = Astro.props
 
 <Layout title='Blog'>
     <div>
-		<h1 class='text-3xl font-bold mb-8'>Blog Posts</h1>
+		<h1 class='text-3xl font-bold mb-8'>Articles</h1>
 		<div class='grid gap-8'>
 			{
 				page.data.map(post => (
@@ -35,16 +35,16 @@ const { page } = Astro.props
 						<div class='card-body'>
 							<div class='flex justify-between items-start'>
 								<h2 class='card-title text-xl'>
-                            <a href={post.slug} class='hover:text-accent'>
-										{post.title}
-									</a>
+                            <a href={post.slug} class='hover:text-primary'>
+									{post.title}
+								</a>
 								</h2>
-								<div class='badge badge-accent badge-outline p-4'>
+								<div class='badge badge-outline border-primary text-primary p-4'>
 									{post.badge}
 								</div>
 							</div>
 							<time datetime={post.date} class='text-sm text-base-content/71'>
-								{new Date(post.date).toLocaleDateString('en-US', {
+								{new Date(post.date).toLocaleDateString('fr-FR', {
 									year: 'numeric',
 									month: 'long',
 									day: 'numeric',
@@ -54,9 +54,9 @@ const { page } = Astro.props
 							<div class='card-actions justify-end'>
 								<a
                             href={post.slug}
-									class='btn btn-sm btn-secondary text-secondary-content'
+									class='btn btn-sm btn-primary'
 								>
-									Read More
+									Lire la suite
 								</a>
 							</div>
 						</div>

@@ -1,40 +1,55 @@
 export const profile = {
-	fullName: 'Your Name',
+	fullName: 'Stéphane Molano',
 	title: '',
-	institute: '',
-	author_name: '', // Author name to be highlighted in the papers section
+	institute: 'Engineering Manager chez Actual group',
+	author_name: 'Stéphane Molano',
 	research_areas: [
-		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
+		{
+			title: 'Sites Internet HTML5 & Animations',
+			description: 'Création de sites sur mesure avec intégration graphique en HTML5/CSS3, transitions CSS3 et animations ornementales incluses.',
+			field: 'computer-science'
+		},
+		{
+			title: 'E-commerce',
+			description: 'Conception de boutiques en ligne sur-mesure avec le meilleur CMS, optimisation du référencement et espace d\'administration complet.',
+			field: 'economics'
+		},
+		{
+			title: 'Applications web & Développement spécifique',
+			description: 'Développement d\'applications web et de modules spécifiques 100% sur mesure, adaptés à vos besoins.',
+			field: 'engineering'
+		},
 	],
 }
 
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
-	email: '',
-	linkedin: '',
-	x: 'https://www.x.com/',
+	email: 'contact@creasteph.net',
+	linkedin: 'https://fr.linkedin.com/in/stephanemolano',
+	x: 'https://twitter.com/StephDotNet',
 	bluesky: '',
-	github: '',
+	github: 'https://github.com/stephdotnet',
 	gitlab: '',
 	scholar: '',
 	inspire: '',
 	arxiv: '',
 	orcid: '',
+	facebook: '',
 }
 
 export const template = {
-	website_url: 'https://localhost:4321', // Astro needs to know your site’s deployed URL to generate a sitemap. It must start with http:// or https://
+	website_url: 'https://creasteph.net',
 	menu_left: false,
 	transitions: true,
-	lightTheme: 'light', // Select one of the Daisy UI Themes or create your own
-	darkTheme: 'dark', // Select one of the Daisy UI Themes or create your own
+	lightTheme: 'creasteph',
+	darkTheme: 'creasteph-dark',
 	excerptLength: 200,
 	postPerPage: 5,
-    base: '' // Repository name starting with /
+    base: ''
 }
 
 export const seo = {
-	default_title: 'Astro Academia',
-	default_description: 'Astro Academia is a template for academic websites.',
-	default_image: '/images/astro-academia.png',
+	default_title: 'CreaSteph - Développeur web sur Perpignan',
+	default_description: 'Stéphane Molano, développeur et intégrateur web sénior sur Perpignan. Création de sites internet, e-commerce et applications web sur mesure.',
+	default_image: '/images/og-image.png',
 }
