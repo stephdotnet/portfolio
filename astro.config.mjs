@@ -13,4 +13,13 @@ export default defineConfig({
     integrations: [react(), tailwind(), sitemap()],
     site: template.website_url,
     base: template.base,
+    markdown: {
+        shikiConfig: {
+            themes: {
+                light: 'github-light',
+                dark: 'github-dark',
+            },
+            defaultColor: false,
+        },
+    },
 });

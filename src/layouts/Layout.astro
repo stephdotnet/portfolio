@@ -79,3 +79,68 @@ const {
 		height: 100%;
 	}
 </style>
+
+<style is:global>
+	/* Shiki dual theme - Light mode (default) */
+	.astro-code,
+	.astro-code span,
+	.astro-code code {
+		color: var(--shiki-light);
+		background-color: transparent;
+	}
+	.astro-code {
+		background-color: #f6f8fa;
+		padding: 1rem;
+		border-radius: 0.5rem;
+	}
+
+	/* Dark mode - all DaisyUI dark themes */
+	[data-theme="dark"] .astro-code,
+	[data-theme="synthwave"] .astro-code,
+	[data-theme="halloween"] .astro-code,
+	[data-theme="forest"] .astro-code,
+	[data-theme="aqua"] .astro-code,
+	[data-theme="black"] .astro-code,
+	[data-theme="luxury"] .astro-code,
+	[data-theme="dracula"] .astro-code,
+	[data-theme="business"] .astro-code,
+	[data-theme="night"] .astro-code,
+	[data-theme="coffee"] .astro-code,
+	[data-theme="dim"] .astro-code,
+	[data-theme="sunset"] .astro-code,
+	[data-theme="creasteph-dark"] .astro-code {
+		background-color: #24292e;
+	}
+
+	[data-theme="dark"] .astro-code span,
+	[data-theme="dark"] .astro-code code,
+	[data-theme="synthwave"] .astro-code span,
+	[data-theme="synthwave"] .astro-code code,
+	[data-theme="halloween"] .astro-code span,
+	[data-theme="halloween"] .astro-code code,
+	[data-theme="forest"] .astro-code span,
+	[data-theme="forest"] .astro-code code,
+	[data-theme="aqua"] .astro-code span,
+	[data-theme="aqua"] .astro-code code,
+	[data-theme="black"] .astro-code span,
+	[data-theme="black"] .astro-code code,
+	[data-theme="luxury"] .astro-code span,
+	[data-theme="luxury"] .astro-code code,
+	[data-theme="dracula"] .astro-code span,
+	[data-theme="dracula"] .astro-code code,
+	[data-theme="business"] .astro-code span,
+	[data-theme="business"] .astro-code code,
+	[data-theme="night"] .astro-code span,
+	[data-theme="night"] .astro-code code,
+	[data-theme="coffee"] .astro-code span,
+	[data-theme="coffee"] .astro-code code,
+	[data-theme="dim"] .astro-code span,
+	[data-theme="dim"] .astro-code code,
+	[data-theme="sunset"] .astro-code span,
+	[data-theme="sunset"] .astro-code code,
+	[data-theme="creasteph-dark"] .astro-code span,
+	[data-theme="creasteph-dark"] .astro-code code {
+		color: var(--shiki-dark);
+		background-color: transparent;
+	}
+</style>

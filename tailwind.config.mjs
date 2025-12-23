@@ -21,6 +21,14 @@ export default {
                         'code': {
                             color: 'oklch(var(--p))',
                         },
+                        'pre': {
+                            backgroundColor: 'oklch(var(--b3))',
+                            color: 'oklch(var(--bc))',
+                        },
+                        'pre code': {
+                            backgroundColor: 'transparent',
+                            color: 'inherit',
+                        },
                     },
                 },
             },
