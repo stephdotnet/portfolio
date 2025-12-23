@@ -1,23 +1,12 @@
 ---
-import { profile, template } from '../../settings'
-
-const { fullName } = profile
+import { Image } from 'astro:assets'
+import { template } from '../../settings'
+import logo from '../../assets/logo.png'
 ---
 
 <footer class='footer footer-center bg-base-100 text-base-content px-4 py-8'>
 	<aside>
-		<p>
-			Copyright © {new Date().getFullYear()} - Tous droits réservés - {fullName}
-		</p>
-		<p>
-			<a href={`${template.base}/mentions-legales`} class='link link-hover'>Mentions légales</a>
-		</p>
-		<p class='text-sm opacity-70 mt-2'>
-			Construit avec <a
-				href='https://github.com/maiobarbero/astro_academia'
-				class='font-bold'
-				target='_blank'>Astro Academia</a
-			> 🎓
-		</p>
+		<Image src={logo} alt='CreaSteph' class='h-12 w-auto mb-2' />
+		<a href={`${template.base}/mentions-legales`} class='link link-hover text-sm'>Mentions légales</a>
 	</aside>
 </footer>
