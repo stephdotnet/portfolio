@@ -1,9 +1,10 @@
 ---
-import {template} from  '../../settings.ts'
+import {template} from '@/settings.ts'
 ---
 
-<label class="grid cursor-pointer place-items-center" transition:persist>
+<label class="grid cursor-pointer place-items-center">
   <input
+    id="theme-toggle"
     type="checkbox"
     class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
     data-toggle-theme={`${template.lightTheme},${template.darkTheme}`}/>
@@ -36,3 +37,25 @@ import {template} from  '../../settings.ts'
     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
   </svg>
 </label>
+
+<script is:inline data-dark-theme={template.darkTheme}>
+  (function() {
+    const darkTheme = document.currentScript.getAttribute('data-dark-theme');
+
+    function syncThemeToggle() {
+      const toggle = document.getElementById('theme-toggle');
+      if (!toggle) return;
+
+      const storedTheme = localStorage.getItem('theme');
+      const isDark = storedTheme === darkTheme;
+
+      toggle.checked = isDark;
+    }
+
+    // Sync immediately on script execution
+    syncThemeToggle();
+
+    // Sync after View Transitions swap (before DOM is visible)
+    document.addEventListener('astro:after-swap', syncThemeToggle);
+  })();
+</script>
