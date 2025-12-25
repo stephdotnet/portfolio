@@ -3,6 +3,7 @@ import tseslint from '@typescript-eslint/eslint-plugin';
 import tsparser from '@typescript-eslint/parser';
 import eslintPluginAstro from 'eslint-plugin-astro';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import noRelativeImportPaths from 'eslint-plugin-no-relative-import-paths';
 import globals from 'globals';
 
 export default [
@@ -13,7 +14,7 @@ export default [
   ...eslintPluginAstro.configs.recommended,
   eslintConfigPrettier,
   {
-    files: ['**/*.{js,mjs,ts,tsx}'],
+    files: ['**/*.{js,mjs,ts,tsx,astro}'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -21,6 +22,15 @@ export default [
         ...globals.browser,
         ...globals.node,
       },
+    },
+    plugins: {
+      'no-relative-import-paths': noRelativeImportPaths,
+    },
+    rules: {
+      'no-relative-import-paths/no-relative-import-paths': [
+        'error',
+        { allowSameFolder: false, rootDir: 'src', prefix: '@' },
+      ],
     },
   },
   {
