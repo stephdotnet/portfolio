@@ -11,7 +11,7 @@ const isBlogPopulated = await getCollection('blog').then(
   (collection) => collection.length > 0
 );
 
-const { fullName, title } = profile;
+const { fullName } = profile;
 ---
 
 <aside
@@ -31,7 +31,6 @@ const { fullName, title } = profile;
           </div>
         </div>
         <h1 class="text-lg font-black mt-8 hidden lg:block">
-          {title}
           <span>{fullName}</span>
         </h1>
       </div>

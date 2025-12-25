@@ -11,7 +11,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write \"src/**/*.{js,ts,jsx,tsx,astro,json,css,md}\"",
     "format:check": "prettier --check \"src/**/*.{js,ts,jsx,tsx,astro,json,css,md}\"",
-    "typecheck": "astro check && tsc --noEmit"
+    "typecheck": "astro check && tsc --noEmit",
+    "checks": "npm run lint:fix && npm run format && npm run typecheck"
   },
   "dependencies": {
     "@astrojs/react": "^4.1.4",

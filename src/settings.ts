@@ -1,6 +1,6 @@
 export const profile = {
   fullName: 'Stéphane Molano',
-  title: '',
+  title: 'Développeur web sénior',
   institute: 'Engineering Manager chez Actual group',
   author_name: 'Stéphane Molano',
   research_areas: [
@@ -19,7 +19,7 @@ export const profile = {
     {
       title: 'E-commerce',
       description:
-        "Conception de boutiques en ligne sur-mesure avec le meilleur CMS, optimisation du référencement et espace d'administration complet.",
+        'Conception de boutiques en ligne sur-mesure avec le meilleur CMS, optimisation SEO et performance.',
       field: 'economics',
     },
   ],
