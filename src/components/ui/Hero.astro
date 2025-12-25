@@ -1,30 +1,39 @@
 ---
-import { Image } from 'astro:assets'
+import { Image } from 'astro:assets';
 
-import SocialIcons from './SocialIcons.astro'
+import SocialIcons from './SocialIcons.astro';
 
-
-const {fullName, title, institute, Illustration} = Astro.props
+const { fullName, title, institute, Illustration } = Astro.props;
 ---
-<div class='flex-1'>
-  <h1 class='text-4xl font-bold mb-4'>
-    Bienvenue! Je suis <span class='text-primary'>{fullName}</span>
+
+<div class="flex-1">
+  <h1 class="text-4xl font-bold mb-4">
+    Bienvenue! Je suis <span class="text-primary">{fullName}</span>
   </h1>
-  <p class='text-xl text-base-content/60 mb-4'>{institute}</p>
-  <p class='text-lg mb-2'>
-    Développeur web senior, je suis passionné par le développement d'applications depuis mes premières lignes de code en 2005.</p>
-    <p class='text-lg mb-2'>Grâce à ma formation d'analyste programmeur, mon expérience en agence web, puis en tant que freelance sur des projets complexes, j'ai acquis une expertise solide dans le développement web.</p>
-    <p class='text-lg mb-2'>Mes compétences : PHP (Laravel, Symfony), TypeScript (React et React native), conception de bases de données, Infra (Docker, GCP) et bien plus encore.
+  <p class="text-xl text-base-content/60 mb-4">{institute}</p>
+  <p class="text-lg mb-2">
+    Développeur web senior, je suis passionné par le développement
+    d'applications depuis mes premières lignes de code en 2005.
   </p>
-  <div class='flex gap-4'>
+  <p class="text-lg mb-2">
+    Grâce à ma formation d'analyste programmeur, mon expérience en agence web,
+    puis en tant que freelance sur des projets complexes, j'ai acquis une
+    expertise solide dans le développement web.
+  </p>
+  <p class="text-lg mb-2">
+    Mes compétences : PHP (Laravel, Symfony), TypeScript (React et React
+    native), conception de bases de données, Infra (Docker, GCP) et bien plus
+    encore.
+  </p>
+  <div class="flex gap-4">
     <SocialIcons />
   </div>
 </div>
-<div class='size-72 lg:block hidden'>
+<div class="size-72 lg:block hidden">
   <!-- Add your profile image -->
   <Image
     src={Illustration}
     alt={fullName}
-    class='w-full h-full mask mask-circle size-44'
+    class="w-full h-full mask mask-circle size-44"
   />
 </div>

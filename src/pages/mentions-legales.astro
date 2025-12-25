@@ -1,6 +1,6 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import { profile, social } from "@/settings";
+import Layout from '@/layouts/Layout.astro';
+import { profile, social } from '@/settings';
 ---
 
 <Layout title="Mentions légales | CreaSteph">
@@ -28,25 +28,32 @@ import { profile, social } from "@/settings";
     <section class="mb-8">
       <h2 class="text-2xl font-bold mb-4">Propriété intellectuelle</h2>
       <p>
-        L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur
-        et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour
-        les documents téléchargeables et les représentations iconographiques et photographiques.
+        L'ensemble de ce site relève de la législation française et
+        internationale sur le droit d'auteur et la propriété intellectuelle.
+        Tous les droits de reproduction sont réservés, y compris pour les
+        documents téléchargeables et les représentations iconographiques et
+        photographiques.
       </p>
       <p>
-        La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est
-        formellement interdite sauf autorisation expresse du directeur de la publication.
+        La reproduction de tout ou partie de ce site sur un support électronique
+        quel qu'il soit est formellement interdite sauf autorisation expresse du
+        directeur de la publication.
       </p>
     </section>
 
     <section class="mb-8">
-      <h2 class="text-2xl font-bold mb-4">Protection des données personnelles</h2>
+      <h2 class="text-2xl font-bold mb-4">
+        Protection des données personnelles
+      </h2>
       <p>
-        Conformément à la loi « Informatique et Libertés » du 6 janvier 1978 modifiée et au Règlement
-        Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification,
-        de suppression et d'opposition aux données personnelles vous concernant.
+        Conformément à la loi « Informatique et Libertés » du 6 janvier 1978
+        modifiée et au Règlement Général sur la Protection des Données (RGPD),
+        vous disposez d'un droit d'accès, de rectification, de suppression et
+        d'opposition aux données personnelles vous concernant.
       </p>
       <p>
-        Pour exercer ces droits, vous pouvez nous contacter à l'adresse email suivante :
+        Pour exercer ces droits, vous pouvez nous contacter à l'adresse email
+        suivante :
         <a href={`mailto:${social.email}`}>{social.email}</a>
       </p>
     </section>
@@ -54,16 +61,18 @@ import { profile, social } from "@/settings";
     <section class="mb-8">
       <h2 class="text-2xl font-bold mb-4">Cookies</h2>
       <p>
-        Ce site peut utiliser des cookies pour améliorer l'expérience utilisateur. En continuant à
-        naviguer sur ce site, vous acceptez l'utilisation de cookies.
+        Ce site peut utiliser des cookies pour améliorer l'expérience
+        utilisateur. En continuant à naviguer sur ce site, vous acceptez
+        l'utilisation de cookies.
       </p>
     </section>
 
     <section class="mb-8">
       <h2 class="text-2xl font-bold mb-4">Liens hypertextes</h2>
       <p>
-        Les liens hypertextes mis en place dans le cadre du présent site web en direction d'autres
-        ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de
+        Les liens hypertextes mis en place dans le cadre du présent site web en
+        direction d'autres ressources présentes sur le réseau Internet ne
+        sauraient engager la responsabilité de
         {profile.fullName}.
       </p>
     </section>
@@ -71,8 +80,15 @@ import { profile, social } from "@/settings";
     <section class="mb-8">
       <h2 class="text-2xl font-bold mb-4">Crédits</h2>
       <p>
-        Site réalisé avec <a href="https://astro.build" target="_blank" rel="noopener">Astro</a> et
-        le thème <a href="https://github.com/maiobarbero/astro_academia" target="_blank" rel="noopener">Astro Academia</a>.
+        Site réalisé avec <a
+          href="https://astro.build"
+          target="_blank"
+          rel="noopener">Astro</a
+        > et le thème <a
+          href="https://github.com/maiobarbero/astro_academia"
+          target="_blank"
+          rel="noopener">Astro Academia</a
+        >.
       </p>
     </section>
   </div>

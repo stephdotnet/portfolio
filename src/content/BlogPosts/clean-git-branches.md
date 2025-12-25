@@ -1,8 +1,8 @@
 ---
-title: "Nettoyer vos branches Git locales"
-date: "2024-02-27"
-tags: ["Git", "GitHub", "Shell"]
-excerpt: "Un workflow efficace pour supprimer les branches Git locales obsolètes après la fusion des pull requests."
+title: 'Nettoyer vos branches Git locales'
+date: '2024-02-27'
+tags: ['Git', 'GitHub', 'Shell']
+excerpt: 'Un workflow efficace pour supprimer les branches Git locales obsolètes après la fusion des pull requests.'
 ---
 
 # Nettoyer vos branches Git locales

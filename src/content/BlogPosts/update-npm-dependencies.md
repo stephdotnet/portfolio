@@ -1,8 +1,8 @@
 ---
-title: "Mettre à jour vos dépendances npm et package.json en une fois"
-date: "2023-02-20"
-tags: ["NPM", "JavaScript", "Webdev"]
-excerpt: "Découvrez npm-check-updates pour synchroniser vos dépendances npm avec votre package.json efficacement."
+title: 'Mettre à jour vos dépendances npm et package.json en une fois'
+date: '2023-02-20'
+tags: ['NPM', 'JavaScript', 'Webdev']
+excerpt: 'Découvrez npm-check-updates pour synchroniser vos dépendances npm avec votre package.json efficacement.'
 ---
 
 # Mettre à jour vos dépendances npm et package.json en une fois

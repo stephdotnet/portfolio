@@ -1,27 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from '../layouts/Layout.astro';
 
-import { profile } from '@/settings'
-import HomeIllustration from '@/assets/index.png'
-import Hero from '@/components/ui/Hero.astro'
-import Grid from '@/components/ui/Grid.astro'
+import { profile } from '@/settings';
+import HomeIllustration from '@/assets/index.png';
+import Hero from '@/components/ui/Hero.astro';
+import Grid from '@/components/ui/Grid.astro';
 
-const { fullName, title, institute, research_areas } = profile
+const { fullName, title, institute, research_areas } = profile;
 ---
 
 <Layout>
-	<!-- Hero Section -->
-	<section class='flex items-center gap-12 border-b pb-12'>
-		<Hero
-			fullName={fullName}
-			title={title}
-			institute={institute}
-			Illustration={HomeIllustration}
-		/>
-	</section>
+  <!-- Hero Section -->
+  <section class="flex items-center gap-12 border-b pb-12">
+    <Hero
+      fullName={fullName}
+      title={title}
+      institute={institute}
+      Illustration={HomeIllustration}
+    />
+  </section>
 
-	<!-- Domaines d'expertise -->
-	<section class='py-12'>
-		<Grid gridTitle="Domaines d'expertise" gridItems={research_areas} />
-	</section>
+  <!-- Domaines d'expertise -->
+  <section class="py-12">
+    <Grid gridTitle="Domaines d'expertise" gridItems={research_areas} />
+  </section>
 </Layout>

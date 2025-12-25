@@ -19,10 +19,14 @@ export interface Skill {
   description: string;
 }
 
-export function isExperience(element: Experience | Education): element is Experience {
+export function isExperience(
+  element: Experience | Education
+): element is Experience {
   return 'title' in element && 'company' in element;
 }
 
-export function isEducation(element: Education | Experience): element is Education {
+export function isEducation(
+  element: Education | Experience
+): element is Education {
   return 'school' in element && 'degree' in element;
 }

@@ -1,12 +1,15 @@
 ---
-import { Image } from 'astro:assets'
-import { template } from '../../settings'
-import logo from '../../assets/logo.png'
+import { Image } from 'astro:assets';
+import { template } from '../../settings';
+import logo from '../../assets/logo.png';
 ---
 
-<footer class='footer footer-center bg-base-100 text-base-content px-4 py-8'>
-	<aside>
-		<Image src={logo} alt='CreaSteph' class='h-12 w-auto mb-2' />
-		<a href={`${template.base}/mentions-legales`} class='link link-hover text-sm'>Mentions légales</a>
-	</aside>
+<footer class="footer footer-center bg-base-100 text-base-content px-4 py-8">
+  <aside>
+    <Image src={logo} alt="CreaSteph" class="h-12 w-auto mb-2" />
+    <a
+      href={`${template.base}/mentions-legales`}
+      class="link link-hover text-sm">Mentions légales</a
+    >
+  </aside>
 </footer>

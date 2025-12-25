@@ -1,26 +1,22 @@
 ---
-import Layout from '@/layouts/Layout.astro'
+import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout title="404 - Page non trouvée">
-  <div class="min-h-[70vh] flex flex-col items-center justify-center text-center">
+  <div
+    class="min-h-[70vh] flex flex-col items-center justify-center text-center"
+  >
     <h1 class="text-9xl font-black text-base-content mb-4">404</h1>
     <h2 class="text-4xl font-bold text-base-content mb-8">Page non trouvée</h2>
-      <p class="text-lg text-base-content/80 mb-8">
-        Oups ! Cette page semble avoir disparu...<br/>
-        Même nos meilleurs algorithmes n'ont pas pu la retrouver !
-      </p>
+    <p class="text-lg text-base-content/80 mb-8">
+      Oups ! Cette page semble avoir disparu...<br />
+      Même nos meilleurs algorithmes n'ont pas pu la retrouver !
+    </p>
     <div class="flex gap-4">
-      <a
-        href="/"
-        class="btn btn-primary text-primary-content"
-      >
+      <a href="/" class="btn btn-primary text-primary-content">
         Retour à l'accueil
       </a>
-      <button
-        class="btn btn-outline btn-accent"
-        onclick="history.back()"
-      >
+      <button class="btn btn-outline btn-accent" onclick="history.back()">
         Page précédente
       </button>
     </div>

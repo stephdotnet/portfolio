@@ -1,8 +1,8 @@
 ---
-title: "Release sémantique automatique avec GitHub Actions"
-date: "2023-05-22"
-tags: ["GitHub", "CI/CD", "Tutorial"]
-excerpt: "Comment automatiser la création de versions et releases avec le versioning sémantique et GitHub Actions."
+title: 'Release sémantique automatique avec GitHub Actions'
+date: '2023-05-22'
+tags: ['GitHub', 'CI/CD', 'Tutorial']
+excerpt: 'Comment automatiser la création de versions et releases avec le versioning sémantique et GitHub Actions.'
 ---
 
 # Release sémantique automatique avec GitHub Actions
@@ -10,12 +10,14 @@ excerpt: "Comment automatiser la création de versions et releases avec le versi
 ## Objectif
 
 Automatiser :
+
 - La création de tags de version basés sur les changements du dépôt
 - La publication de releases déclenchée par des événements spécifiques
 
 ## Le versioning sémantique
 
 Le versioning sémantique suit le format **X.Y.Z** où :
+
 - **X** = Changements cassants (breaking changes)
 - **Y** = Changements mineurs ou mises à jour rétrocompatibles
 - **Z** = Correctifs ou patches
