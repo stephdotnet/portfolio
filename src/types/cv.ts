@@ -24,9 +24,3 @@ export function isExperience(
 ): element is Experience {
   return 'title' in element && 'company' in element;
 }
-
-export function isEducation(
-  element: Education | Experience
-): element is Education {
-  return 'school' in element && 'degree' in element;
-}

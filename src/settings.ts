@@ -37,7 +37,6 @@ export const social = {
   inspire: '',
   arxiv: '',
   orcid: '',
-  facebook: '',
 };
 
 export const template = {
