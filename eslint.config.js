@@ -6,6 +6,12 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import noRelativeImportPaths from 'eslint-plugin-no-relative-import-paths';
 import globals from 'globals';
 
+// Fix globals with trailing whitespace (known bug in globals package)
+const sanitizeGlobals = (obj) =>
+  Object.fromEntries(
+    Object.entries(obj).map(([key, value]) => [key.trim(), value])
+  );
+
 export default [
   {
     ignores: ['node_modules/', 'dist/', '.astro/'],
@@ -19,10 +25,13 @@ export default [
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
-        ...globals.browser,
-        ...globals.node,
+        ...sanitizeGlobals(globals.browser),
+        ...sanitizeGlobals(globals.node),
       },
     },
+  },
+  {
+    files: ['src/**/*.{js,ts,tsx,astro}'],
     plugins: {
       'no-relative-import-paths': noRelativeImportPaths,
     },
