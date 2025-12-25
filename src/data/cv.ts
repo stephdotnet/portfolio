@@ -72,6 +72,12 @@ export const education = [
 		location: 'Toulouse, France',
 		description: 'Formation en informatique générale, algorithmique et programmation.',
 	},
+	{
+		school: 'Lycéee Maillol',
+		time: '2005 - 2007',
+		degree: 'Baccalauréat Scientifique',
+		location: 'Perpignan, France',
+	},
 ];
 
 export const skills = [
@@ -85,7 +91,7 @@ export const skills = [
 	},
 	{
 		title: 'Frontend',
-		description: 'React, React Native, TypeScript, JavaScript, HTML5/CSS3, Tailwind CSS',
+		description: 'React, React Native, TypeScript, JavaScript, HTML/CSS, Tailwind CSS',
 	},
 	{
 		title: 'DevOps & Outils',
@@ -94,6 +100,10 @@ export const skills = [
 	{
 		title: 'Base de données',
 		description: 'MySQL, PostgreSQL, Redis, conception et optimisation de schémas',
+	},
+	{
+		title: 'Documentation et conventions',
+		description: 'Mise en place de guidelines et de méthodologies de travail (workflows contribution, revues de code, documentation)',
 	},
 ];
 

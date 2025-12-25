@@ -5,8 +5,13 @@ export const profile = {
 	author_name: 'Stéphane Molano',
 	research_areas: [
 		{
-			title: 'Sites Internet HTML5 & Animations',
-			description: 'Création de sites sur mesure avec intégration graphique en HTML5/CSS3, transitions CSS3 et animations ornementales incluses.',
+			title: 'Applications web',
+			description: 'Développement d\'applications web et de modules spécifiques sur mesure, adaptés à vos besoins.',
+			field: 'engineering'
+		},
+		{
+			title: 'Gestion de projet',
+			description: 'Conception et accompagnement des équipes à la mise en place de projets scalable et sécurisés.',
 			field: 'computer-science'
 		},
 		{
@@ -14,17 +19,12 @@ export const profile = {
 			description: 'Conception de boutiques en ligne sur-mesure avec le meilleur CMS, optimisation du référencement et espace d\'administration complet.',
 			field: 'economics'
 		},
-		{
-			title: 'Applications web & Développement spécifique',
-			description: 'Développement d\'applications web et de modules spécifiques 100% sur mesure, adaptés à vos besoins.',
-			field: 'engineering'
-		},
 	],
 }
 
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
-	email: 'contact@creasteph.net',
+	email: '',
 	linkedin: 'https://fr.linkedin.com/in/stephanemolano',
 	x: 'https://twitter.com/StephDotNet',
 	bluesky: '',
