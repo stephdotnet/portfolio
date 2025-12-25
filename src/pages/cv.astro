@@ -1,9 +1,9 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { experiences, education, skills, languages } from '../data/cv';
+import { experiences, education, skills, languages } from '@/data/cv';
 import CvTimeline from '@/components/ui/CvTimeline.astro';
 
-import type { Experience, Education } from '../types/cv';
+import type { Experience, Education } from '@/types/cv';
 import List from '@/components/ui/List.astro';
 
 let orderedExperiences: Experience[] = [];
