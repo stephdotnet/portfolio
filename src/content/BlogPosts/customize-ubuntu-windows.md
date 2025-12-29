@@ -11,6 +11,8 @@ Lorsqu'on passe de Windows à Linux, l'interface peut sembler déroutante. Voici
 
 ## 1. Dash to Panel
 
+![Dash to Panel - Barre des tâches style Windows](/images/blog/customize-ubuntu/dash-to-panel.png)
+
 Recrée la barre des tâches Windows avec :
 
 - Tuiles d'applications non groupées
@@ -25,6 +27,8 @@ Recrée la barre des tâches Windows avec :
 - [GitHub](https://github.com/home-sweet-gnome/dash-to-panel)
 
 ## 2. Wallpaper Switcher
+
+![Wallpaper Switcher - Rotation de fond d'écran](/images/blog/customize-ubuntu/wallpaper-switcher.png)
 
 GNOME n'a pas de rotation de fond d'écran native. Cette extension comble ce manque simplement.
 
@@ -44,6 +48,10 @@ Gestion du presse-papiers style Windows (`⊞ Win + V`). N'oubliez pas de délie
 
 ## 4. Audio Selector
 
+![Audio Selector - Changement de source audio](/images/blog/customize-ubuntu/audio-selector.png)
+
+![Audio Toggle - Sélection entrée/sortie](/images/blog/customize-ubuntu/audio-toggle.png)
+
 Simplifie le changement de source audio sans passer par les préférences système.
 
 **Liens :**
@@ -52,6 +60,8 @@ Simplifie le changement de source audio sans passer par les préférences systè
 - [GitHub](https://github.com/hs65/Gnome-Shell-Extension-Audio-Selector)
 
 ## 5. CPU Freq
+
+![CPU Freq - Monitoring CPU](/images/blog/customize-ubuntu/cpu-freq.png)
 
 Affiche la fréquence du CPU avec un widget dans la barre des tâches et un panneau étendu pour les paramètres d'alimentation.
 
@@ -62,6 +72,8 @@ Affiche la fréquence du CPU avec un widget dans la barre des tâches et un pann
 
 ## 6. Emoji Selector
 
+![Emoji Selector - Sélecteur d'emojis](/images/blog/customize-ubuntu/emoji-selector.png)
+
 Insertion rapide d'emojis via raccourci clavier (par défaut `❖ Super + E`, reconfigurable en `❖ Super + .` pour correspondre à Windows).
 
 **Liens :**
@@ -70,6 +82,8 @@ Insertion rapide d'emojis via raccourci clavier (par défaut `❖ Super + E`, re
 - [GitHub](https://github.com/maoschanz/emoji-selector-for-gnome)
 
 ## 7. Gtile
+
+![Gtile - Placement de fenêtres](/images/blog/customize-ubuntu/gtile.png)
 
 Utilitaire de placement de fenêtres essentiel pour les configurations multi-écrans, permettant un positionnement précis via de nombreux raccourcis clavier.
 

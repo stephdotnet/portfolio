@@ -98,12 +98,12 @@ export const skills = [
   {
     title: 'Backend',
     description:
-      'PHP 8, Laravel, Symfony, API REST, PHPUnit, architecture logicielle',
+      'PHP 8, Laravel, Symfony, API REST, PHPUnit, conception et design patterns',
   },
   {
     title: 'Frontend',
     description:
-      'React, React Native, TypeScript, JavaScript, HTML/CSS, Tailwind CSS',
+      'React (+ MUI), React Native (+ Expo, Tamagui), TypeScript, JavaScript, HTML/CSS',
   },
   {
     title: 'DevOps & Outils',
