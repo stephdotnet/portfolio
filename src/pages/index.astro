@@ -3,6 +3,7 @@ import Layout from '@/layouts/Layout.astro';
 
 import { profile } from '@/settings';
 import HomeIllustration from '@/assets/index.png';
+import HomeIllustrationDark from '@/assets/index-dark.png';
 import Hero from '@/components/ui/Hero.astro';
 import Grid from '@/components/ui/Grid.astro';
 
@@ -16,7 +17,7 @@ const { fullName, title, institute, research_areas } = profile;
       fullName={fullName}
       title={title}
       institute={institute}
-      Illustration={HomeIllustration}
+      Illustration={{ light: HomeIllustration, dark: HomeIllustrationDark }}
     />
   </section>
 

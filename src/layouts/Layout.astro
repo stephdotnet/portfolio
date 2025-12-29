@@ -110,4 +110,18 @@ const {
     color: var(--shiki-dark);
     background-color: transparent;
   }
+
+  /* Theme-aware images */
+  .img-light {
+    display: block;
+  }
+  .img-dark {
+    display: none;
+  }
+  [data-theme='creasteph-dark'] .img-light {
+    display: none;
+  }
+  [data-theme='creasteph-dark'] .img-dark {
+    display: block;
+  }
 </style>
